@@ -1,0 +1,47 @@
+# Configuración Jekyll BÁSICA para GitHub Pages - OTEC Revolución Digital
+title: "Revolución Digital OTEC"
+description: "Transforma tu OTEC o desarrolla tu marca personal como relator. Digitalización integral para el sector capacitación en Chile"
+url: "https://pixai2025.github.io"
+baseurl: "/otec-revolucion-digital"
+author: "OTEC Revolución Digital"
+email: "contacto@otec-revolucion.com"
+
+# SEO básico
+lang: es-CL
+timezone: America/Santiago
+
+# SOLO PLUGINS SOPORTADOS POR GITHUB PAGES GRATUITO
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Configuración básica para GitHub Pages
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Excluir archivos del build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+
+# Configuración de compresión
+sass:
+  style: compressed
+
+# Configuración de permalink
+permalink: pretty
+
+# Meta tags por defecto (SIN SEO-TAG PLUGIN)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
