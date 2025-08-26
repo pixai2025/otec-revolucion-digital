@@ -1,0 +1,43 @@
+{
+  "name": "otec-revolucion-digital",
+  "version": "1.0.0",
+  "description": "Landing page para transformación digital de OTEC y desarrollo de marca personal para relatores en Chile",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 8080",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "git add . && git commit -m 'Deploy updates' && git push origin main",
+    "test": "echo 'No tests configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixai2025/otec-revolucion-digital.git"
+  },
+  "keywords": [
+    "OTEC",
+    "Chile",
+    "capacitación",
+    "digital",
+    "transformación",
+    "SENCE",
+    "relatores",
+    "landing-page",
+    "marketing-digital",
+    "educación-corporativa"
+  ],
+  "author": "OTEC Revolución Digital",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pixai2025/otec-revolucion-digital/issues"
+  },
+  "homepage": "https://pixai2025.github.io/otec-revolucion-digital/",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

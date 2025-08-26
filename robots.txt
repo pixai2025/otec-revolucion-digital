@@ -1,0 +1,43 @@
+# Robots.txt para OTEC Revolución Digital
+# https://pixai2025.github.io/otec-revolucion-digital/
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos importantes
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /assets/
+
+# Bloquear archivos innecesarios
+Disallow: /README.md
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+
+# Sitemap
+Sitemap: https://pixai2025.github.io/otec-revolucion-digital/sitemap.xml
+
+# Crawl delay (opcional, para servidores más lentos)
+Crawl-delay: 1
+
+# Específico para Google Bot
+User-agent: Googlebot
+Allow: /
+
+# Específico para Bing Bot
+User-agent: Bingbot
+Allow: /
+
+# Permitir herramientas de social media para Open Graph
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

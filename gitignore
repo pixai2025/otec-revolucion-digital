@@ -1,0 +1,85 @@
+# Logs y archivos temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Directorios de dependencias
+node_modules/
+jspm_packages/
+
+# Archivos de ambiente y configuración
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de build y distribución
+/dist
+/build
+/public/build
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Cache de npm y yarn
+.npm
+.yarn-integrity
+
+# Archivos de coverage
+coverage/
+*.lcov
+
+# Archivos de backup
+*.bak
+*.backup
+*.old
+
+# Archivos de configuración local
+.prettierrc.local
+.eslintrc.local
+
+# Archivos de certificados SSL
+*.pem
+
+# Variables de entorno de Netlify
+.netlify
+
+# Archivos de error de analytics
+error_log
+
+# Archivos temporales de MacOS
+.AppleDouble
+.LSOverride
+
+# Archivos temporales de Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archivos temporales de Linux
+*~
+
+# Archivos de configuración personal
+config.local.js
+config.local.json
