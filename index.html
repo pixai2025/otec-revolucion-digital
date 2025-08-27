@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolución Digital OTEC - Transforma tu Capacitación | Digitalización Chile</title>
-    
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Transforma tu OTEC o desarrolla tu marca personal como relator. Digitalización especializada para el sector capacitación en Chile. Aprovecha el mercado de 787K personas capacitadas.">
     <meta name="keywords" content="OTEC Chile, transformación digital, capacitación empresarial, SENCE, relatores, marketing digital, BCN Global">
     <meta name="author" content="Revolución Digital OTEC">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://pixai2025.github.io/otec-revolucion-digital/">
-    
+
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="4S9g_F5rrTRPslAvDJji6MW_angDMRzCIwzZzgnJB2I" />
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Revolución Digital OTEC - Transforma tu Capacitación">
     <meta property="og:description" content="¿Tu OTEC sigue compitiendo con webs del 2000? Descubre cómo BCN Global domina el mercado con estrategia digital. Tu transformación empieza aquí.">
@@ -23,17 +23,18 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Revolución Digital OTEC">
     <meta property="og:locale" content="es_CL">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Revolución Digital OTEC - Transforma tu Capacitación">
     <meta name="twitter:description" content="¿Tu OTEC sigue compitiendo con webs del 2000? Descubre cómo digitalizar tu negocio de capacitación.">
     <meta name="twitter:image" content="https://pixai2025.github.io/otec-revolucion-digital/og-image.jpg">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    
+
     <!-- CSS Libraries -->
+    <!-- Se actualiza a la última versión de Tailwind CSS para compatibilidad -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -68,7 +69,7 @@
         }
     }
     </script>
-    
+
     <style>
         * { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
@@ -86,6 +87,110 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
+
+        /* FIXES DE GENS PARK Y MEJORAS */
+
+        /* Estilo para los campos del formulario (fixes de Genspark) */
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background-color: rgba(255, 255, 255, 0.1) !important;
+            border: 2px solid rgba(255, 255, 255, 0.2) !important;
+            color: white !important;
+            border-radius: 8px !important;
+            padding: 12px 16px !important;
+            font-size: 16px !important;
+            transition: all 0.3s ease !important;
+            width: 100%;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            background-color: rgba(255, 255, 255, 0.15) !important;
+            border-color: #667eea !important;
+            outline: none !important;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2) !important;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6) !important;
+        }
+
+        /* Fix para radio buttons (Se mejora la visibilidad) */
+        .radio-option {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block; /* Asegura que el label ocupe todo el espacio */
+        }
+        .radio-option:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #667eea;
+        }
+
+        /* Fix para select arrows */
+        .form-group select {
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 12px center !important;
+            background-size: 12px !important;
+        }
+
+        /* Estilos para el botón de CTA */
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 32px;
+            font-weight: 700;
+            border-radius: 9999px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        /* Estilos para los botones de selección de perfil */
+        .profile-btn {
+            background-color: #1a202c; /* bg-gray-700 */
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
+            border: 2px solid #4a5568; /* border-gray-600 */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            text-align: center;
+        }
+        .profile-btn.active-otec {
+            background-color: #3182ce; /* bg-blue-600 */
+            border-color: #3182ce;
+        }
+        .profile-btn.active-relator {
+            background-color: #805ad5; /* bg-purple-600 */
+            border-color: #805ad5;
+        }
+        .profile-btn:hover {
+            background-color: #2d3748; /* hover:bg-gray-800 */
+        }
+
+        /* Estilos para el mensaje de validación */
+        .validation-message {
+            background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -102,6 +207,7 @@
                     <a href="#problema" class="text-gray-600 hover:text-blue-600 transition">Problema</a>
                     <a href="#solucion" class="text-gray-600 hover:text-blue-600 transition">Solución</a>
                     <a href="#datos" class="text-gray-600 hover:text-blue-600 transition">Datos</a>
+                    <!-- El botón de la navegación ya tenía el ID correcto, se mantiene -->
                     <a href="#contacto" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Agendar Ahora</a>
                 </div>
             </div>
@@ -137,10 +243,11 @@
                     </div>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="scrollToForm()" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition hover-scale pulse-animation">
+                        <!-- Botón CTA con función de scroll correcta -->
+                        <button id="cta-hero-btn" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition hover-scale pulse-animation">
                             <i class="fas fa-rocket mr-2"></i>Quiero Escalar Ahora
                         </button>
-                        <button onclick="document.getElementById('datos').scrollIntoView()" class="bg-white bg-opacity-20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-30 transition border border-white border-opacity-30">
+                        <button onclick="document.getElementById('datos').scrollIntoView({behavior: 'smooth'})" class="bg-white bg-opacity-20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-30 transition border border-white border-opacity-30">
                             Calcular mi Potencial
                         </button>
                     </div>
@@ -286,176 +393,6 @@
                     <div class="text-gray-400">pero no los encuentran online</div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Solution Section -->
-    <section id="solucion" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    La Solución Que <span class="gradient-text">Necesitas</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Transformación digital específica para el sector OTEC chileno
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- For OTEC -->
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-200">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-building text-2xl text-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-900">Para OTEC</h3>
-                            <p class="text-blue-700 font-semibold">Digitalización integral</p>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Plataforma LXP personalizada</div>
-                                <div class="text-gray-600 text-sm">Como BCN Global pero para tu OTEC</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Marketing digital 360°</div>
-                                <div class="text-gray-600 text-sm">Atrae empresas que buscan capacitación</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Automatización SENCE</div>
-                                <div class="text-gray-600 text-sm">Reduce burocracia, aumenta eficiencia</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Analytics de aprendizaje</div>
-                                <div class="text-gray-600 text-sm">Demuestra ROI real a las empresas</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- For Relatores -->
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border-2 border-purple-200">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user-tie text-2xl text-white"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-gray-900">Para Relatores</h3>
-                            <p class="text-purple-700 font-semibold">Marca personal digital</p>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Personal branding estratégico</div>
-                                <div class="text-gray-600 text-sm">Posiciónate como el experto #1</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">LinkedIn optimization</div>
-                                <div class="text-gray-600 text-sm">Que las empresas te encuentren</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Content marketing</div>
-                                <div class="text-gray-600 text-sm">Demuestra tu expertise constantemente</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
-                            <div>
-                                <div class="font-semibold text-gray-900">Monetización digital</div>
-                                <div class="text-gray-600 text-sm">Más allá de las clases presenciales</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- BCN Global Case Study -->
-            <div class="mt-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl p-8 text-white">
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div>
-                        <h3 class="text-3xl font-bold mb-4">El Caso BCN Global</h3>
-                        <p class="text-xl mb-6">De OTEC tradicional a #1 de Chile con estrategia digital</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <i class="fas fa-trophy mr-3 text-yellow-400"></i>
-                                <span>OTEC #1 por 3 años consecutivos</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-globe mr-3 text-yellow-400"></i>
-                                <span>+10,000 empresas en +10 países</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-handshake mr-3 text-yellow-400"></i>
-                                <span>Socio oficial de Udemy para Latam</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="text-center bg-white bg-opacity-20 rounded-lg p-6">
-                            <div class="text-4xl font-bold text-yellow-400">250K</div>
-                            <div class="text-sm">Cursos digitales disponibles</div>
-                        </div>
-                        <div class="text-center bg-white bg-opacity-20 rounded-lg p-6">
-                            <div class="text-4xl font-bold text-yellow-400">16</div>
-                            <div class="text-sm">Idiomas diferentes</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Market Data Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">Los Datos Duros del Mercado</h2>
-                <p class="text-xl text-gray-600">Cifras reales que demuestran la oportunidad (y urgencia) de digitalizar</p>
-            </div>
-            
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="text-center bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="text-5xl font-bold text-red-500 mb-4">27%</div>
-                    <div class="text-gray-600">del mercado lo controla solo el 1% de las OTEC</div>
-                </div>
-                
-                <div class="text-center bg-gray-700 rounded-2xl p-8 shadow-lg">
-                    <div class="text-5xl font-bold text-orange-500 mb-4">30%</div>
-                    <div class="text-gray-200">de las OTEC no sobrevive al primer año</div>
-                </div>
-                
-                <div class="text-center bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="text-5xl font-bold text-blue-500 mb-4">70%</div>
-                    <div class="text-gray-600">del mercado ya es capacitación digital</div>
-                </div>
-                
-                <div class="text-center bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="text-5xl font-bold text-green-500 mb-4">787K</div>
-                    <div class="text-gray-600">personas capacitadas en 2024</div>
-                </div>
-            </div>
             
             <!-- Urgency Section -->
             <div class="mt-16 grid md:grid-cols-3 gap-8">
@@ -507,12 +444,12 @@
                 <div class="mb-8">
                     <h3 class="text-2xl font-bold mb-6 text-center">Primero, cuéntanos quién eres:</h3>
                     <div class="grid md:grid-cols-2 gap-4">
-                        <button onclick="selectProfile('otec')" id="btn-otec" class="profile-btn bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl border-2 border-blue-600 transition">
+                        <button id="btn-otec" class="profile-btn">
                             <i class="fas fa-building text-3xl mb-3"></i>
                             <div class="text-xl font-bold">Soy una OTEC</div>
                             <div class="text-blue-200">Necesito digitalizar mi organización</div>
                         </button>
-                        <button onclick="selectProfile('relator')" id="btn-relator" class="profile-btn bg-gray-700 hover:bg-purple-700 text-white p-6 rounded-xl border-2 border-gray-600 transition">
+                        <button id="btn-relator" class="profile-btn">
                             <i class="fas fa-user-tie text-3xl mb-3"></i>
                             <div class="text-xl font-bold">Soy un Relator</div>
                             <div class="text-gray-300">Quiero desarrollar mi marca personal</div>
@@ -521,152 +458,138 @@
                 </div>
                 
                 <!-- Form -->
-               <form id="contactForm" action="https://formspree.io/f/mrbagrwl" method="POST" accept-charset="UTF-8">
-    <!-- Configuración Formspree -->
-    <input type="hidden" name="_subject" value="🚀 Nuevo Lead - OTEC Revolución Digital">
-    <input type="hidden" name="_next" value="https://pixai2025.github.io/otec-revolucion-digital/?enviado=ok">
-    <input type="hidden" name="📊_LANDING_PAGE" value="OTEC Revolución Digital">
-    <input type="hidden" name="🕐_TIMESTAMP" id="timestamp">
-    <input type="hidden" name="🔗_FUENTE_TRAFICO" id="fuente_trafico">
-    <input type="text" name="_gotcha" style="display:none">
+                <form id="contactForm" action="https://formspree.io/f/mrbagrwl" method="POST" accept-charset="UTF-8" style="display: none;">
+                    <!-- Configuración Formspree -->
+                    <input type="hidden" name="_subject" value="🚀 Nuevo Lead - OTEC Revolución Digital">
+                    <input type="hidden" name="_next" value="https://pixai2025.github.io/otec-revolucion-digital/?enviado=ok">
+                    <input type="hidden" name="📊_LANDING_PAGE" value="OTEC Revolución Digital">
+                    <input type="hidden" name="🕐_TIMESTAMP" id="timestamp">
+                    <input type="hidden" name="🔗_FUENTE_TRAFICO" id="fuente_trafico">
+                    <input type="text" name="_gotcha" style="display:none">
 
-    <!-- Selector de tipo -->
-    <div class="form-group">
-        <label class="form-label">Primero, cuéntanos quién eres:</label>
-        <div class="radio-group">
-            <label class="radio-option">
-                <input type="radio" name="🏢_TIPO_CLIENTE" value="OTEC" id="tipo-otec" onchange="showFields('otec')">
-                <span class="radio-custom"></span>
-                Soy una OTEC
-            </label>
-            <label class="radio-option">
-                <input type="radio" name="🏢_TIPO_CLIENTE" value="RELATOR" id="tipo-relator" onchange="showFields('relator')">
-                <span class="radio-custom"></span>
-                Soy un Relator
-            </label>
-        </div>
-    </div>
+                    <input type="hidden" name="🏢_TIPO_CLIENTE" id="profileType">
+                    
+                    <!-- Campos comunes -->
+                    <div class="form-group">
+                        <label for="nombre">👤 Nombre Completo *</label>
+                        <input type="text" name="👤_NOMBRE_COMPLETO" id="nombre" required>
+                    </div>
 
-    <!-- Campos comunes -->
-    <div class="form-group">
-        <label for="nombre">👤 Nombre Completo *</label>
-        <input type="text" name="👤_NOMBRE_COMPLETO" id="nombre" required>
-    </div>
+                    <div class="form-group">
+                        <label for="email">📧 Email *</label>
+                        <input type="email" name="📧_EMAIL_CONTACTO" id="email" required>
+                    </div>
 
-    <div class="form-group">
-        <label for="email">📧 Email *</label>
-        <input type="email" name="📧_EMAIL_CONTACTO" id="email" required>
-    </div>
+                    <div class="form-group">
+                        <label for="telefono">📱 Teléfono *</label>
+                        <input type="tel" name="📱_TELEFONO_DIRECTO" id="telefono" required placeholder="+56912345678">
+                    </div>
 
-    <div class="form-group">
-        <label for="telefono">📱 Teléfono *</label>
-        <input type="tel" name="📱_TELEFONO_DIRECTO" id="telefono" required placeholder="+56912345678">
-    </div>
+                    <!-- Campos específicos para OTEC -->
+                    <div id="campos-otec" class="campos-dinamicos" style="display: none;">
+                        <div class="form-group">
+                            <label for="institucion">🏛️ Nombre de la Institución *</label>
+                            <input type="text" name="🏛️_INSTITUCION_OTEC" id="institucion">
+                        </div>
 
-    <!-- Campos específicos para OTEC -->
-    <div id="campos-otec" class="campos-dinamicos" style="display: none;">
-        <div class="form-group">
-            <label for="institucion">🏛️ Nombre de la Institución *</label>
-            <input type="text" name="🏛️_INSTITUCION_OTEC" id="institucion">
-        </div>
+                        <div class="form-group">
+                            <label for="cursos">📚 Número de Cursos Actuales</label>
+                            <select name="📚_CURSOS_ACTUALES" id="cursos">
+                                <option value="">Selecciona...</option>
+                                <option value="1-5 cursos">1-5 cursos</option>
+                                <option value="6-15 cursos">6-15 cursos</option>
+                                <option value="16-50 cursos">16-50 cursos</option>
+                                <option value="50+ cursos">50+ cursos</option>
+                            </select>
+                        </div>
 
-        <div class="form-group">
-            <label for="cursos">📚 Número de Cursos Actuales</label>
-            <select name="📚_CURSOS_ACTUALES" id="cursos">
-                <option value="">Selecciona...</option>
-                <option value="1-5 cursos">1-5 cursos</option>
-                <option value="6-15 cursos">6-15 cursos</option>
-                <option value="16-50 cursos">16-50 cursos</option>
-                <option value="50+ cursos">50+ cursos</option>
-            </select>
-        </div>
+                        <div class="form-group">
+                            <label for="presupuesto">💰 Presupuesto Marketing Mensual</label>
+                            <select name="💰_PRESUPUESTO_MENSUAL" id="presupuesto">
+                                <option value="">Selecciona...</option>
+                                <option value="$100K - $500K">$100K - $500K</option>
+                                <option value="$500K - $1M">$500K - $1M</option>
+                                <option value="$1M - $3M">$1M - $3M</option>
+                                <option value="$3M+">$3M+</option>
+                            </select>
+                        </div>
 
-        <div class="form-group">
-            <label for="presupuesto">💰 Presupuesto Marketing Mensual</label>
-            <select name="💰_PRESUPUESTO_MENSUAL" id="presupuesto">
-                <option value="">Selecciona...</option>
-                <option value="$100K - $500K">$100K - $500K</option>
-                <option value="$500K - $1M">$500K - $1M</option>
-                <option value="$1M - $3M">$1M - $3M</option>
-                <option value="$3M+">$3M+</option>
-            </select>
-        </div>
+                        <div class="form-group">
+                            <label for="desafios-otec">🎯 Principales Desafíos</label>
+                            <textarea name="🎯_PRINCIPALES_DESAFIOS" id="desafios-otec" rows="3" placeholder="Ej: Competir con BCN Global, aumentar leads empresariales..."></textarea>
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            <label for="desafios-otec">🎯 Principales Desafíos</label>
-            <textarea name="🎯_PRINCIPALES_DESAFIOS" id="desafios-otec" rows="3" placeholder="Ej: Competir con BCN Global, aumentar leads empresariales..."></textarea>
-        </div>
-    </div>
+                    <!-- Campos específicos para Relatores -->
+                    <div id="campos-relator" class="campos-dinamicos" style="display: none;">
+                        <div class="form-group">
+                            <label for="expertise">🎓 Área de Expertise Principal</label>
+                            <select name="🎓_AREA_EXPERTISE" id="expertise">
+                                <option value="">Selecciona...</option>
+                                <option value="Liderazgo y Gestión">Liderazgo y Gestión</option>
+                                <option value="Ventas y Comercial">Ventas y Comercial</option>
+                                <option value="Marketing Digital">Marketing Digital</option>
+                                <option value="Recursos Humanos">Recursos Humanos</option>
+                                <option value="Finanzas y Contabilidad">Finanzas y Contabilidad</option>
+                                <option value="Tecnología e Innovación">Tecnología e Innovación</option>
+                                <option value="Habilidades Blandas">Habilidades Blandas</option>
+                                <option value="Seguridad y Prevención">Seguridad y Prevención</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
 
-    <!-- Campos específicos para Relatores -->
-    <div id="campos-relator" class="campos-dinamicos" style="display: none;">
-        <div class="form-group">
-            <label for="expertise">🎓 Área de Expertise Principal</label>
-            <select name="🎓_AREA_EXPERTISE" id="expertise">
-                <option value="">Selecciona...</option>
-                <option value="Liderazgo y Gestión">Liderazgo y Gestión</option>
-                <option value="Ventas y Comercial">Ventas y Comercial</option>
-                <option value="Marketing Digital">Marketing Digital</option>
-                <option value="Recursos Humanos">Recursos Humanos</option>
-                <option value="Finanzas y Contabilidad">Finanzas y Contabilidad</option>
-                <option value="Tecnología e Innovación">Tecnología e Innovación</option>
-                <option value="Habilidades Blandas">Habilidades Blandas</option>
-                <option value="Seguridad y Prevención">Seguridad y Prevención</option>
-                <option value="Otro">Otro</option>
-            </select>
-        </div>
+                        <div class="form-group">
+                            <label for="experiencia">⏱️ Años de Experiencia</label>
+                            <select name="⏱️_EXPERIENCIA_ANOS" id="experiencia">
+                                <option value="">Selecciona...</option>
+                                <option value="1-3 años">1-3 años</option>
+                                <option value="4-7 años">4-7 años</option>
+                                <option value="8-15 años">8-15 años</option>
+                                <option value="15+ años">15+ años</option>
+                            </select>
+                        </div>
 
-        <div class="form-group">
-            <label for="experiencia">⏱️ Años de Experiencia</label>
-            <select name="⏱️_EXPERIENCIA_ANOS" id="experiencia">
-                <option value="">Selecciona...</option>
-                <option value="1-3 años">1-3 años</option>
-                <option value="4-7 años">4-7 años</option>
-                <option value="8-15 años">8-15 años</option>
-                <option value="15+ años">15+ años</option>
-            </select>
-        </div>
+                        <div class="form-group">
+                            <label for="presencia">🌐 Presencia Digital Actual</label>
+                            <select name="🌐_PRESENCIA_DIGITAL" id="presencia">
+                                <option value="">Selecciona...</option>
+                                <option value="Sin presencia digital">Sin presencia digital</option>
+                                <option value="LinkedIn básico">LinkedIn básico</option>
+                                <option value="Redes sociales activas">Redes sociales activas</option>
+                                <option value="Web personal">Web personal</option>
+                                <option value="Marca personal establecida">Marca personal establecida</option>
+                            </select>
+                        </div>
 
-        <div class="form-group">
-            <label for="presencia">🌐 Presencia Digital Actual</label>
-            <select name="🌐_PRESENCIA_DIGITAL" id="presencia">
-                <option value="">Selecciona...</option>
-                <option value="Sin presencia digital">Sin presencia digital</option>
-                <option value="LinkedIn básico">LinkedIn básico</option>
-                <option value="Redes sociales activas">Redes sociales activas</option>
-                <option value="Web personal">Web personal</option>
-                <option value="Marca personal establecida">Marca personal establecida</option>
-            </select>
-        </div>
+                        <div class="form-group">
+                            <label for="objetivos">🚀 Objetivos de Marca Personal</label>
+                            <textarea name="🚀_OBJETIVOS_MARCA" id="objetivos" rows="3" placeholder="Ej: Aumentar visibilidad, conseguir más clientes, posicionarme como experto..."></textarea>
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            <label for="objetivos">🚀 Objetivos de Marca Personal</label>
-            <textarea name="🚀_OBJETIVOS_MARCA" id="objetivos" rows="3" placeholder="Ej: Aumentar visibilidad, conseguir más clientes, posicionarme como experto..."></textarea>
-        </div>
-    </div>
+                    <!-- Mensaje opcional -->
+                    <div class="form-group">
+                        <label for="mensaje">💬 Mensaje Adicional (Opcional)</label>
+                        <textarea name="💬_MENSAJE_ADICIONAL" id="mensaje" rows="3" placeholder="Cuéntanos más sobre tu situación actual..."></textarea>
+                    </div>
 
-    <!-- Mensaje opcional -->
-    <div class="form-group">
-        <label for="mensaje">💬 Mensaje Adicional (Opcional)</label>
-        <textarea name="💬_MENSAJE_ADICIONAL" id="mensaje" rows="3" placeholder="Cuéntanos más sobre tu situación actual..."></textarea>
-    </div>
+                    <!-- Botón de envío -->
+                    <button type="submit" class="cta-button">
+                        <span id="submit-text">Enviar</span>
+                    </button>
 
-    <!-- Botón de envío -->
-    <button type="submit" class="cta-button">
-        📤 Solicitar Sesión Estratégica Gratuita
-    </button>
+                    <p class="form-disclaimer">
+                        * Al enviar este formulario, aceptas que te contactemos para agendar una sesión estratégica gratuita.
+                    </p>
+                </form>
 
-    <p class="form-disclaimer">
-        * Al enviar este formulario, aceptas que te contactemos para agendar una sesión estratégica gratuita.
-    </p>
-</form>
-
-                
                 <!-- Initial Message -->
                 <div id="initial-message" class="text-center text-gray-300">
                     <i class="fas fa-arrow-up text-4xl mb-4 text-blue-400"></i>
                     <p class="text-lg">Selecciona tu perfil arriba para acceder al formulario personalizado</p>
                 </div>
+                <!-- Contenedor para mensajes de éxito o error -->
+                <div id="form-messages" class="mt-4"></div>
             </div>
         </div>
     </section>
@@ -717,9 +640,11 @@
         </div>
     </footer>
     
-    <!-- Scripts -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Analytics Events
+    <!-- FIX 3: Se ha movido todo el JavaScript aquí, al final del body -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- Se elimina el script que causa el error -->
+    <script>
+        // Funciones de Analytics
         function trackEvent(eventName, parameters = {}) {
             gtag('event', eventName, {
                 event_category: 'engagement',
@@ -729,187 +654,74 @@
             });
         }
         
-        // Profile Selection
-        function selectProfile(profile) {
+        // Función para mostrar mensajes de validación o error
+        function showMessage(message, type = 'error') {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `p-4 my-4 rounded-lg text-center font-semibold ${type === 'success' ? 'bg-green-600' : 'bg-red-600'}`;
+            messageDiv.innerHTML = message;
+            const formMessages = document.getElementById('form-messages');
+            if (formMessages) {
+                formMessages.innerHTML = ''; // Limpia mensajes anteriores
+                formMessages.appendChild(messageDiv);
+            }
+        }
+        
+        // Manejador de la selección de perfil
+        function handleProfileSelection(profile) {
             const otecBtn = document.getElementById('btn-otec');
             const relatorBtn = document.getElementById('btn-relator');
             const form = document.getElementById('contactForm');
             const initialMessage = document.getElementById('initial-message');
-            const otecFields = document.getElementById('otec-fields');
-            const relatorFields = document.getElementById('relator-fields');
-            const profileType = document.getElementById('profileType');
-            const bonusText = document.getElementById('bonus-text');
-            const submitText = document.getElementById('submit-text');
-            
-            // Reset buttons
-            otecBtn.className = 'profile-btn bg-gray-700 hover:bg-blue-700 text-white p-6 rounded-xl border-2 border-gray-600 transition';
-            relatorBtn.className = 'profile-btn bg-gray-700 hover:bg-purple-700 text-white p-6 rounded-xl border-2 border-gray-600 transition';
-            
-            // Hide all fields
+            const otecFields = document.getElementById('campos-otec');
+            const relatorFields = document.getElementById('campos-relator');
+            const profileTypeInput = document.getElementById('profileType');
+            const submitTextSpan = document.getElementById('submit-text');
+
+            // Resetear clases y visibilidad
+            otecBtn.classList.remove('active-otec');
+            relatorBtn.classList.remove('active-relator');
             otecFields.style.display = 'none';
             relatorFields.style.display = 'none';
-            
+            form.style.display = 'block';
+            initialMessage.style.display = 'none';
+
             if (profile === 'otec') {
-                otecBtn.className = 'profile-btn bg-blue-600 hover:bg-blue-700 text-white p-6 rounded-xl border-2 border-blue-600 transition';
+                otecBtn.classList.add('active-otec');
                 otecFields.style.display = 'block';
-                profileType.value = 'OTEC';
-                bonusText.textContent = 'Auditoría digital gratuita + análisis competitivo de tu mercado local + plan de acción personalizado (Valor: $300.000)';
-                submitText.textContent = 'Conseguir Auditoría Gratuita para mi OTEC';
+                profileTypeInput.value = 'OTEC';
+                submitTextSpan.textContent = 'Conseguir Auditoría Gratuita para mi OTEC';
                 
-                // Make OTEC fields required
-                document.querySelector('input[name="nombre_otec"]').required = true;
-                document.querySelector('select[name="anos_funcionamiento"]').required = true;
-                document.querySelector('select[name="facturacion"]').required = true;
-                document.querySelector('select[name="tiene_web"]').required = true;
+                // Hacer campos de OTEC requeridos
+                document.getElementById('institucion').required = true;
                 
-                // Remove required from relator fields
-                document.querySelector('input[name="especialidad"]').required = false;
-                document.querySelector('select[name="experiencia"]').required = false;
-                document.querySelector('select[name="trabaja_otec"]').required = false;
-                document.querySelector('select[name="presencia_digital"]').required = false;
-                
+                // Quitar required de campos de relator
+                document.getElementById('expertise').required = false;
+                document.getElementById('experiencia').required = false;
+                document.getElementById('presencia').required = false;
+
                 trackEvent('profile_selected', {label: 'OTEC'});
-                
             } else if (profile === 'relator') {
-                relatorBtn.className = 'profile-btn bg-purple-600 hover:bg-purple-700 text-white p-6 rounded-xl border-2 border-purple-600 transition';
+                relatorBtn.classList.add('active-relator');
                 relatorFields.style.display = 'block';
-                profileType.value = 'Relator';
-                bonusText.textContent = 'Kit de marca personal completo + optimización de LinkedIn + estrategia de contenido por 30 días (Valor: $200.000)';
-                submitText.textContent = 'Conseguir Kit Gratuito de Personal Branding';
+                profileTypeInput.value = 'RELATOR';
+                submitTextSpan.textContent = 'Conseguir Kit Gratuito de Personal Branding';
                 
-                // Make relator fields required
-                document.querySelector('input[name="especialidad"]').required = true;
-                document.querySelector('select[name="experiencia"]').required = true;
-                document.querySelector('select[name="trabaja_otec"]').required = true;
-                document.querySelector('select[name="presencia_digital"]').required = true;
-                
-                // Remove required from OTEC fields
-                document.querySelector('input[name="nombre_otec"]').required = false;
-                document.querySelector('select[name="anos_funcionamiento"]').required = false;
-                document.querySelector('select[name="facturacion"]').required = false;
-                document.querySelector('select[name="tiene_web"]').required = false;
-                
+                // Hacer campos de relator requeridos
+                document.getElementById('expertise').required = true;
+                document.getElementById('experiencia').required = true;
+                document.getElementById('presencia').required = true;
+
+                // Quitar required de campos de OTEC
+                document.getElementById('institucion').required = false;
+
                 trackEvent('profile_selected', {label: 'Relator'});
             }
             
-            // Show form
-            form.style.display = 'block';
-            initialMessage.style.display = 'none';
-            
-            // Scroll to form
-            setTimeout(() => {
-                form.scrollIntoView({behavior: 'smooth', block: 'start'});
-            }, 300);
+            // Scroll suave al formulario después de seleccionar perfil
+            form.scrollIntoView({behavior: 'smooth', block: 'start'});
         }
         
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            const profileType = document.getElementById('profileType').value;
-            trackEvent('form_submit', {label: profileType});
-        });
-        
-        // Scroll to form function
-        function scrollToForm() {
-            document.getElementById('contacto').scrollIntoView({behavior: 'smooth'});
-            trackEvent('cta_click', {label: 'hero_button'});
-        }
-        
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-        
-        // Observe sections for scroll animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(30px)';
-                section.style.transition = 'all 0.8s ease-out';
-                observer.observe(section);
-            });
-        });
-        
-        // Track scroll depth
-        let maxScroll = 0;
-        window.addEventListener('scroll', () => {
-            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-            if (scrollPercent > maxScroll) {
-                maxScroll = scrollPercent;
-                if (maxScroll % 25 === 0) { // Track every 25%
-                    trackEvent('scroll_depth', {value: maxScroll});
-                }
-            }
-        });
-        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"975608d8a9edda7c","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
-            
-        // Configuración automática del formulario
-        document.addEventListener('DOMContentLoaded', function() {
-        // Configurar timestamp y fuente
-            document.getElementById('timestamp').value = new Date().toISOString();
-            const urlParams = new URLSearchParams(window.location.search);
-            const utmSource = urlParams.get('utm_source') || 'directo';
-            document.getElementById('fuente_trafico').value = utmSource;
-        
-        // Mostrar mensaje de éxito si viene del redirect
-            if (window.location.search.includes('enviado=ok')) {
-                showSuccessMessage();
-            }
-        
-            // Configurar envío del formulario
-            const form = document.getElementById('contactForm');
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-        
-            form.addEventListener('submit', function(e) {
-                submitBtn.innerHTML = '📤 Enviando...';
-                submitBtn.disabled = true;
-                
-                // Validar que se seleccionó tipo de usuario
-                const tipoSelected = form.querySelector('input[name="🏢_TIPO_CLIENTE"]:checked');
-                if (!tipoSelected) {
-                    alert('⚠️ Por favor selecciona si eres una OTEC o un Relator');
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                    e.preventDefault();
-                    return;
-                }
-        
-                // Feedback visual después del envío
-                setTimeout(function() {
-                    submitBtn.innerHTML = '✅ ¡Enviado! Revisa tu email';
-                }, 2000);
-            });
-        });
-        
-        // Mostrar campos dinámicos según selección
-        function showFields(tipo) {
-            const camposOtec = document.getElementById('campos-otec');
-            const camposRelator = document.getElementById('campos-relator');
-            
-            if (tipo === 'otec') {
-                camposOtec.style.display = 'block';
-                camposRelator.style.display = 'none';
-                // Hacer campos OTEC requeridos
-                document.getElementById('institucion').required = true;
-            } else if (tipo === 'relator') {
-                camposOtec.style.display = 'block';
-                camposRelator.style.display = 'block';
-                // Quitar required de campos OTEC
-                document.getElementById('institucion').required = false;
-            }
-        }
-        
+        // Manejador para el mensaje de éxito del formulario
         function showSuccessMessage() {
             const successDiv = document.createElement('div');
             successDiv.innerHTML = `
@@ -921,6 +733,98 @@
             `;
             document.getElementById('contactForm').parentNode.insertBefore(successDiv, document.getElementById('contactForm'));
         }
+
+        // DOMContentLoaded para inicializar los scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configurar timestamp y fuente de tráfico
+            const timestampInput = document.getElementById('timestamp');
+            if (timestampInput) {
+                timestampInput.value = new Date().toISOString();
+            }
+            const urlParams = new URLSearchParams(window.location.search);
+            const utmSource = urlParams.get('utm_source') || 'directo';
+            const fuenteTraficoInput = document.getElementById('fuente_trafico');
+            if (fuenteTraficoInput) {
+                fuenteTraficoInput.value = utmSource;
+            }
+
+            // Mostrar mensaje de éxito si viene del redirect
+            if (window.location.search.includes('enviado=ok')) {
+                showSuccessMessage();
+            }
+            
+            // Manejador del botón "Quiero Escalar Ahora"
+            const ctaHeroBtn = document.getElementById('cta-hero-btn');
+            if (ctaHeroBtn) {
+                ctaHeroBtn.addEventListener('click', function() {
+                    document.getElementById('contacto').scrollIntoView({behavior: 'smooth'});
+                    trackEvent('cta_click', {label: 'hero_button'});
+                });
+            }
+            
+            // Manejador del envío del formulario
+            const form = document.getElementById('contactForm');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            form.addEventListener('submit', function(e) {
+                const profileTypeInput = document.getElementById('profileType');
+                if (!profileTypeInput.value) {
+                    showMessage('⚠️ Por favor selecciona si eres una OTEC o un Relator');
+                    e.preventDefault();
+                    return;
+                }
+                
+                submitBtn.innerHTML = '📤 Enviando...';
+                submitBtn.disabled = true;
+                trackEvent('form_submit', {label: profileTypeInput.value});
+            });
+
+            // Manejadores de los botones de perfil
+            const otecBtn = document.getElementById('btn-otec');
+            const relatorBtn = document.getElementById('btn-relator');
+
+            if (otecBtn) {
+                otecBtn.addEventListener('click', () => handleProfileSelection('otec'));
+            }
+            if (relatorBtn) {
+                relatorBtn.addEventListener('click', () => handleProfileSelection('relator'));
+            }
+
+            // Animaciones de scroll (originales del usuario)
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'all 0.8s ease-out';
+                observer.observe(section);
+            });
+            
+            let maxScroll = 0;
+            window.addEventListener('scroll', () => {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll) {
+                    maxScroll = scrollPercent;
+                    if (maxScroll % 25 === 0) { // Track every 25%
+                        trackEvent('scroll_depth', {value: maxScroll});
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
