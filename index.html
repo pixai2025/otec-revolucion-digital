@@ -521,9 +521,18 @@
                 </div>
                 
                 <!-- Form -->
-                <form id="contactForm" action="https://formspree.io/f/xnnqooby" method="POST" class="space-y-6" style="display: none;">
-                    <input type="hidden" name="profile_type" id="profileType" value="">
-                    <input type="hidden" name="_subject" value="Nuevo Lead - Revolución Digital OTEC">
+                <form id="contactForm" action="https://formspree.io/f/mrbagrwl" method="POST" class="space-y-6" style="display: none;">
+                    <!-- Formspree Configuration -->
+                        <input type="hidden" name="_subject" value="🚀 Nuevo Lead - OTEC Revolución Digital">
+                        <input type="hidden" name="_next" value="https://pixai2025.github.io/otec-revolucion-digital/?enviado=ok">
+                        <input type="hidden" name="_cc" value="revolucionotec@gmail.com">
+                        <input type="hidden" name="landing_page" value="OTEC Revolución Digital">
+                        <input type="hidden" name="timestamp" id="timestamp">
+                        <input type="hidden" name="fuente_trafico" id="fuente_trafico">
+                        
+                        <!-- Anti-spam -->
+                        <input type="text" name="_gotcha" style="display:none">
+
                     
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
@@ -858,5 +867,41 @@
         });
     </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"975608d8a9edda7c","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+    // Configurar timestamp y fuente de tráfico automáticamente
+document.addEventListener('DOMContentLoaded', function() {
+    // Timestamp
+    document.getElementById('timestamp').value = new Date().toISOString();
+    
+    // Fuente de tráfico
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmSource = urlParams.get('utm_source') || 'directo';
+    document.getElementById('fuente_trafico').value = utmSource;
+    
+    // Configurar formulario
+    const form = document.getElementById('contactForm');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    
+    form.addEventListener('submit', function(e) {
+        // Cambiar texto del botón
+        submitBtn.innerHTML = '📤 Enviando...';
+        submitBtn.disabled = true;
+        
+        // Después de 3 segundos (tiempo para que Formspree procese)
+        setTimeout(function() {
+            submitBtn.innerHTML = '✅ ¡Enviado!';
+            setTimeout(function() {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        }, 3000);
+    });
+    
+    // Mostrar mensaje de gracias si vuelve del redirect
+    if (window.location.search.includes('enviado=ok')) {
+        alert('🎉 ¡Gracias! Tu mensaje fue enviado correctamente. Te contactaremos pronto.');
+    }
+});
+
 </body>
 </html>
