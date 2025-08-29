@@ -1,18 +1,1 @@
-# CNAME para dominio personalizado
-# Descomenta la línea siguiente cuando tengas tu dominio:
-# www.revolucionotec.lat
-
-# Ejemplos sugeridos:
-# otec-revolucion.com
-# transformacion-otec.cl  
-# revolucion-digital-otec.com
-# otec-chile.digital
-
-# Instrucciones:
-# 1. Compra tu dominio preferido
-# 2. Descomenta la línea con tu dominio
-# 3. Configura los DNS según el README.md
-# 4. Commit y push los cambios
-
-# Nota: GitHub Pages detectará automáticamente este archivo
-# y configurará SSL gratuito para tu dominio personalizado
+revolucionotec.lat
